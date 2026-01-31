@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <h2>Cards animées au scroll</h2>
+
+  <div class="card-scroll card-lift">
+    <h3>Scroll Reveal</h3>
+    <p>Apparaît en douceur.</p>
+  </div>
+
+  <script>
+    const cards = document.querySelectorAll('.card-scroll');
+    function reveal() {
+      cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          card.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', reveal);
+    reveal();
+  </script>
+</BaseLayout>

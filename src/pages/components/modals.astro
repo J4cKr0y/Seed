@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <h2>Modales &lt;dialog&gt;</h2>
+
+  <button class="btn" onclick="modal.showModal()">Ouvrir la modale</button>
+
+  <dialog id="modal">
+    <h3>Modale native</h3>
+    <p>Gérée par le navigateur, focus inclus.</p>
+    <form method="dialog">
+      <button class="btn">Fermer</button>
+    </form>
+  </dialog>
+</BaseLayout>

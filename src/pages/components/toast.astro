@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <h2>Toast CSS-only</h2>
+
+  <button class="btn" onclick="document.body.classList.add('show-toast')">
+    Afficher toast
+  </button>
+
+  <div class="toast">Action réussie</div>
+
+  <script>
+    setTimeout(() => document.body.classList.remove('show-toast'), 3000);
+  </script>
+</BaseLayout>

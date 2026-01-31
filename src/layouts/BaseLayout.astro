@@ -1,0 +1,54 @@
+---
+import "../styles/tokens.css";
+import "../styles/base.css";
+import "../styles/components.css";
+import ThemeProvider from "../components/ThemeProvider.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
+---
+
+<html lang="fr">
+  <head>
+    <ThemeProvider />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title><slot name="title"></slot>Seed</title>
+  </head>
+
+  <body>
+    <header class="container header">
+      <h1>Seed</h1>
+      <ThemeToggle />
+    </header>
+<nav class="container nav-links">
+  <a href="/">Accueil</a>
+  <a href="/components/modals">Modales</a>
+  <a href="/components/accordions">Accordéons</a>
+  <a href="/components/cards">Cards</a>
+  <a href="/components/alerts">Alertes</a>
+  <a href="/components/badges">Badges</a>
+  <a href="/components/tabs">Onglets</a>
+  <a href="/components/dropdown">Dropdown</a>
+  <a href="/components/sidebar">Sidebar</a>
+  <a href="/components/toast">Toast</a>
+  <a href="/components/steps">Étapes</a>
+  <a href="/components/progress">Progress</a>
+  <a href="/components/timeline">Timeline</a>
+  <a href="/components/table">Table</a>
+  <a href="/components/tooltip">Tooltip</a>
+  <a href="/components/skeleton">Skeleton</a>
+  <a href="/components/scroll-cards">Scroll Cards</a>
+  <a href="/components/transitions">Transitions</a>
+  <a href="/components/hero">Hero</a>
+  <a href="/components/carousel">Carrousel</a>
+  <a href="/components/theme">Thème</a>
+</nav>
+
+    <main class="container">
+      <slot />
+    </main>
+
+    <footer class="container footer">
+      Seed — Démo
+    </footer>
+  </body>
+</html>

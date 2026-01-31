@@ -1,0 +1,30 @@
+# --- Dépendances ---
+node_modules/
+
+# --- Build Astro ---
+dist/
+.astro/
+
+# --- Environnements ---
+.env
+.env.*
+!.env.example
+
+# --- Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# --- Systèmes / Éditeurs ---
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# --- Outils ---
+.cache/

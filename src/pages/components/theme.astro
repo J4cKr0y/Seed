@@ -1,0 +1,12 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ThemeToggle from "../../components/ThemeToggle.astro";
+---
+
+<BaseLayout>
+  <h2>Thème clair / sombre</h2>
+  <p>Le thème suit les préférences système, avec override manuel.</p>
+  <div style="margin-top: var(--space-4);">
+    <ThemeToggle />
+  </div>
+</BaseLayout>

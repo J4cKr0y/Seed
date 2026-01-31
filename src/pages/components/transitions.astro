@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <h2>Transitions fluides entre pages</h2>
+
+  <h3>Expand</h3>
+  <a class="card-lift transition-card" data-target="/components/cards">Voir la transition expand</a>
+
+  <h3>Fade + Scale</h3>
+  <button class="btn" onclick="go('/components/cards')">Voir fade</button>
+
+  <h3>Morphing</h3>
+  <a class="card-lift morph-card" data-target="/components/cards">Voir morphing</a>
+
+  <script>
+    // expand + morphing + fade scripts ici (déjà fournis précédemment)
+  </script>
+</BaseLayout>

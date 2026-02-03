@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <Fragment slot="title">Feedback & états</Fragment>
+
+  <h2>Empty state</h2>
+  <div class="empty-state">
+    <h3>Aucun résultat</h3>
+    <p>Essayez de modifier vos filtres.</p>
+    <button class="btn btn-primary">Réinitialiser</button>
+  </div>
+
+  <h2>Loading state</h2>
+  <div class="skeleton skeleton-text" style="width: 80%"></div>
+  <div class="skeleton skeleton-text" style="width: 60%"></div>
+
+  <h2>Error state</h2>
+  <div class="alert alert-error">
+    Une erreur est survenue. Veuillez réessayer.
+  </div>
+
+  <h2>Success state</h2>
+  <div class="alert alert-success">
+    Action effectuée avec succès.
+  </div>
+</BaseLayout>

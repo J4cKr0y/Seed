@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <Fragment slot="title">Layouts d'application</Fragment>
+
+  <h2>Dashboard layout</h2>
+  <div class="app-layout">
+    <aside class="sidebar-demo">
+      <h3>Menu</h3>
+      <a href="#">Dashboard</a>
+      <a href="#">Utilisateurs</a>
+      <a href="#">Paramètres</a>
+    </aside>
+
+    <main class="content-demo">
+      <h3>Contenu principal</h3>
+      <p>Zone de travail.</p>
+    </main>
+  </div>
+
+  <h2>Layout Settings (2 colonnes)</h2>
+  <div class="settings-layout">
+    <aside>
+      <h4>Navigation</h4>
+      <a href="#">Profil</a>
+      <a href="#">Sécurité</a>
+      <a href="#">Notifications</a>
+    </aside>
+
+    <section>
+      <h4>Section active</h4>
+      <p>Contenu de la section.</p>
+    </section>
+  </div>
+</BaseLayout>

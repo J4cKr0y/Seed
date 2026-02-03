@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <Fragment slot="title">Profil utilisateur</Fragment>
+
+  <h1>Profil utilisateur</h1>
+
+  <div class="profile-layout">
+    <aside class="profile-sidebar">
+      <img src="https://via.placeholder.com/120" alt="avatar" class="avatar">
+      <h3>Alice Martin</h3>
+      <p class="text-muted">alice@example.com</p>
+
+      <nav>
+        <a href="#">Informations</a>
+        <a href="#">Sécurité</a>
+        <a href="#">Notifications</a>
+      </nav>
+    </aside>
+
+    <section class="profile-content">
+      <h2>Informations personnelles</h2>
+
+      <form class="form-sections">
+        <section>
+          <label>Nom</label>
+          <input type="text" value="Alice Martin">
+
+          <label>Email</label>
+          <input type="email" value="alice@example.com">
+        </section>
+
+        <button class="btn btn-primary">Mettre à jour</button>
+      </form>
+    </section>
+  </div>
+</BaseLayout>

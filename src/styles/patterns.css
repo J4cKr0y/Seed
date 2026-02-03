@@ -1,0 +1,315 @@
+/* -------------------------------------------------------
+   AUTH
+------------------------------------------------------- */
+.form-card {
+  background: var(--color-surface);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  max-width: 400px;
+  margin: var(--space-6) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.form-card input {
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+/* -------------------------------------------------------
+   LAYOUTS
+------------------------------------------------------- */
+.app-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-6);
+  margin: var(--space-6) 0;
+}
+
+.sidebar-demo {
+  background: var(--color-surface);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.content-demo {
+  background: var(--color-surface);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+}
+
+.settings-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--space-6);
+  margin: var(--space-6) 0;
+}
+
+.settings-layout aside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+/* -------------------------------------------------------
+   FORMS
+------------------------------------------------------- */
+.form-sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  margin: var(--space-6) 0;
+}
+
+.form-sections section {
+  background: var(--color-surface);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.review-card {
+  background: var(--color-surface);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  max-width: 500px;
+  margin: var(--space-6) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+/* -------------------------------------------------------
+   LISTS & FILTERS
+------------------------------------------------------- */
+.filter-bar {
+  display: flex;
+  gap: var(--space-3);
+  margin: var(--space-4) 0;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.list-card {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.list-card li {
+  background: var(--color-surface);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+/* -------------------------------------------------------
+   NAVIGATION
+------------------------------------------------------- */
+.breadcrumb {
+  display: flex;
+  gap: var(--space-2);
+  margin: var(--space-4) 0;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.breadcrumb span {
+  color: var(--color-text-muted);
+}
+
+.mega-menu summary {
+  cursor: pointer;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+}
+
+.mega-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  padding: var(--space-4);
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  margin-top: var(--space-2);
+}
+
+.mega-content a {
+  display: block;
+  padding: var(--space-1) 0;
+  text-decoration: none;
+}
+/* -------------------------------------------------------
+   TABLE
+------------------------------------------------------- */
+.sortable th {
+  cursor: pointer;
+}
+
+.table-sticky {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.table-sticky thead th {
+  position: sticky;
+  top: 0;
+  background: var(--color-surface);
+}
+
+/* -------------------------------------------------------
+   FEEDBACK
+------------------------------------------------------- */
+.empty-state {
+  background: var(--color-surface);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  margin: var(--space-6) 0;
+}
+
+.empty-state h3 {
+  margin-bottom: var(--space-2);
+}
+
+.empty-state p {
+  margin-bottom: var(--space-4);
+}
+/* -------------------------------------------------------
+   DASHBOARD
+------------------------------------------------------- */
+.grid-3 > .card-lift h3 {
+  margin-bottom: var(--space-2);
+}
+
+.list-card li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* -------------------------------------------------------
+   PROFIL
+------------------------------------------------------- */
+.profile-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.profile-sidebar {
+  background: var(--color-surface);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.profile-sidebar .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: var(--space-3);
+}
+
+.profile-sidebar nav {
+  margin-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.profile-sidebar nav a {
+  text-decoration: none;
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+}
+
+.profile-sidebar nav a:hover {
+  background: var(--color-border);
+}
+
+.profile-content {
+  background: var(--color-surface);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+/* -------------------------------------------------------
+   ADMIN
+------------------------------------------------------- */
+.grid-3 > .card-lift button {
+  margin-top: var(--space-3);
+}
+
+/* Admin table spacing */
+.table td,
+.table th {
+  padding: var(--space-3);
+}
+/* -------------------------------------------------------
+   WIZARD
+------------------------------------------------------- */
+.steps {
+  margin-bottom: var(--space-6);
+}
+
+.form-sections section h3 {
+  margin-bottom: var(--space-3);
+}
+/* -------------------------------------------------------
+   SAAS
+------------------------------------------------------- */
+/* Hero section */
+.hero {
+  padding: var(--space-10) 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: var(--space-3);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-6);
+}
+
+/* SaaS features list */
+.list-card li {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}

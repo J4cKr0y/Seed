@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <Fragment slot="title">Dashboard</Fragment>
+
+  <h1>Dashboard</h1>
+
+  <section class="grid grid-3" style="margin-top: var(--space-6)">
+    <div class="card-lift">
+      <h3>Utilisateurs</h3>
+      <p>1 248 actifs</p>
+    </div>
+
+    <div class="card-lift">
+      <h3>Revenus</h3>
+      <p>32 400 € ce mois</p>
+    </div>
+
+    <div class="card-lift">
+      <h3>Taux de conversion</h3>
+      <p>4,8 %</p>
+    </div>
+  </section>
+
+  <section style="margin-top: var(--space-8)">
+    <h2>Activité récente</h2>
+    <ul class="list-card">
+      <li><strong>Alice</strong> a créé un projet</li>
+      <li><strong>Bob</strong> a mis à jour son profil</li>
+      <li><strong>Claire</strong> a supprimé un document</li>
+    </ul>
+  </section>
+</BaseLayout>

@@ -1,0 +1,84 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <Fragment slot="title">Patterns</Fragment>
+
+  <h1>Patterns d’entreprise</h1>
+  <p>
+    Les patterns sont des assemblages de composants Seed, conçus pour répondre aux besoins réels
+    des applications professionnelles : dashboards, formulaires complexes, navigation avancée,
+    pages de profil, workflows multi‑étapes, etc.
+  </p>
+
+  <!-- PATTERNS DE BASE -->
+  <h2 style="margin-top: var(--space-8)">Patterns de base</h2>
+
+  <section class="grid grid-3" style="margin-top: var(--space-4)">
+    <a class="card-lift" href="/patterns/auth">
+      <h3>Authentification</h3>
+      <p>Login, création de compte, reset password…</p>
+    </a>
+
+    <a class="card-lift" href="/patterns/layouts">
+      <h3>Layouts d’application</h3>
+      <p>Dashboard layout, settings, master/detail…</p>
+    </a>
+
+    <a class="card-lift" href="/patterns/forms">
+      <h3>Formulaires avancés</h3>
+      <p>Multi‑sections, review, validation…</p>
+    </a>
+
+    <a class="card-lift" href="/patterns/lists">
+      <h3>Listes & filtres</h3>
+      <p>Recherche, filtres, pagination…</p>
+    </a>
+
+    <a class="card-lift" href="/patterns/navigation">
+      <h3>Navigation avancée</h3>
+      <p>Breadcrumb, mega‑menu, tabs imbriqués…</p>
+    </a>
+
+    <a class="card-lift" href="/patterns/tables">
+      <h3>Tableaux avancés</h3>
+      <p>Tri, sticky header, actions…</p>
+    </a>
+
+    <a class="card-lift" href="/patterns/feedback">
+      <h3>Feedback & états</h3>
+      <p>Empty states, loading, success, error…</p>
+    </a>
+  </section>
+
+  <!-- PATTERNS AVANCÉS -->
+  <h2 style="margin-top: var(--space-10)">Patterns avancés</h2>
+
+  <section class="grid grid-3" style="margin-top: var(--space-4)">
+    <a class="card-lift" href="/patterns/dashboard">
+      <h3>Dashboard</h3>
+      <p>Vue d’ensemble, KPIs, activité récente…</p>
+    </a>
+
+    <a class="card-lift" href="/patterns/profile">
+      <h3>Profil utilisateur</h3>
+      <p>Informations, sécurité, préférences…</p>
+    </a>
+
+    <a class="card-lift" href="/patterns/admin">
+      <h3>Administration</h3>
+      <p>Gestion des utilisateurs, contenu, système…</p>
+    </a>
+
+    <a class="card-lift" href="/patterns/wizard">
+      <h3>Wizard multi‑étapes</h3>
+      <p>Workflows guidés étape par étape.</p>
+    </a>
+
+    <a class="card-lift" href="/patterns/saas">
+      <h3>Starter SaaS</h3>
+      <p>Hero, features, dashboard, billing…</p>
+    </a>
+  </section>
+</BaseLayout>

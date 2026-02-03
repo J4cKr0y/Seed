@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <Fragment slot="title">Administration</Fragment>
+
+  <h1>Panneau d'administration</h1>
+
+  <section class="grid grid-3" style="margin-top: var(--space-6)">
+    <div class="card-lift">
+      <h3>Utilisateurs</h3>
+      <p>Gérer les comptes, rôles et permissions.</p>
+      <button class="btn">Gérer</button>
+    </div>
+
+    <div class="card-lift">
+      <h3>Contenu</h3>
+      <p>Pages, articles, documents.</p>
+      <button class="btn">Gérer</button>
+    </div>
+
+    <div class="card-lift">
+      <h3>Système</h3>
+      <p>Logs, configuration, intégrations.</p>
+      <button class="btn">Gérer</button>
+    </div>
+  </section>
+
+  <section style="margin-top: var(--space-8)">
+    <h2>Dernières actions</h2>
+    <table class="table">
+      <thead>
+        <tr><th>Utilisateur</th><th>Action</th><th>Date</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Alice</td><td>Suppression d’un projet</td><td>12:32</td></tr>
+        <tr><td>Bob</td><td>Ajout d’un utilisateur</td><td>09:14</td></tr>
+      </tbody>
+    </table>
+  </section>
+</BaseLayout>

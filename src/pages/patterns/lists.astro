@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <Fragment slot="title">Listes & filtres</Fragment>
+
+  <h2>Liste filtrable</h2>
+  <div class="filter-bar">
+    <input type="text" placeholder="Rechercher…">
+    <select>
+      <option>Tous</option>
+      <option>Actifs</option>
+      <option>Inactifs</option>
+    </select>
+  </div>
+
+  <ul class="list-card">
+    <li>
+      <strong>Alice</strong>
+      <span class="badge badge-success">Actif</span>
+    </li>
+    <li>
+      <strong>Bob</strong>
+      <span class="badge badge-error">Inactif</span>
+    </li>
+  </ul>
+
+  <h2>Liste paginée</h2>
+  <div class="pagination">
+    <button class="btn">Précédent</button>
+    <span>Page 1 / 10</span>
+    <button class="btn">Suivant</button>
+  </div>
+</BaseLayout>

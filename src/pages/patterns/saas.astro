@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <Fragment slot="title">Starter SaaS</Fragment>
+
+  <h1>Starter SaaS</h1>
+
+  <section class="hero">
+    <h1>Votre SaaS, sans friction</h1>
+    <p>Un design system puriste, rapide et extensible.</p>
+    <button class="btn btn-primary">Commencer</button>
+  </section>
+
+  <section class="grid grid-3" style="margin-top: var(--space-8)">
+    <div class="card-lift">
+      <h3>Authentification</h3>
+      <p>Login, signup, reset password.</p>
+    </div>
+
+    <div class="card-lift">
+      <h3>Dashboard</h3>
+      <p>Vue d’ensemble de l’activité.</p>
+    </div>
+
+    <div class="card-lift">
+      <h3>Billing</h3>
+      <p>Plans, abonnements, paiements.</p>
+    </div>
+  </section>
+
+  <section style="margin-top: var(--space-8)">
+    <h2>Fonctionnalités clés</h2>
+    <ul class="list-card">
+      <li>UI puriste, rapide et accessible</li>
+      <li>Composants HTML-first</li>
+      <li>Patterns d’entreprise intégrés</li>
+      <li>Transitions fluides</li>
+    </ul>
+  </section>
+</BaseLayout>

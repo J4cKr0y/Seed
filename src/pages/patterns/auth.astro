@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <Fragment slot="title">Authentification</Fragment>
+
+  <h2>Connexion</h2>
+  <form class="form-card">
+    <label>Email</label>
+    <input type="email" placeholder="email@exemple.com">
+
+    <label>Mot de passe</label>
+    <input type="password" placeholder="••••••••">
+
+    <button class="btn btn-primary">Se connecter</button>
+  </form>
+
+  <h2>Mot de passe oublié</h2>
+  <form class="form-card">
+    <label>Email</label>
+    <input type="email" placeholder="email@exemple.com">
+    <button class="btn">Envoyer le lien</button>
+  </form>
+
+  <h2>Créer un compte</h2>
+  <form class="form-card">
+    <label>Nom</label>
+    <input type="text">
+
+    <label>Email</label>
+    <input type="email">
+
+    <label>Mot de passe</label>
+    <input type="password">
+
+    <button class="btn btn-primary">Créer un compte</button>
+  </form>
+</BaseLayout>

@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <Fragment slot="title">Navigation avancée</Fragment>
+
+  <h2>Breadcrumb</h2>
+  <nav class="breadcrumb">
+    <a href="#">Accueil</a>
+    <a href="#">Utilisateurs</a>
+    <span>Alice</span>
+  </nav>
+
+  <h2>Mega-menu</h2>
+  <details class="mega-menu">
+    <summary>Produits</summary>
+    <div class="mega-content">
+      <div>
+        <h4>Catégorie A</h4>
+        <a href="#">Produit 1</a>
+        <a href="#">Produit 2</a>
+      </div>
+      <div>
+        <h4>Catégorie B</h4>
+        <a href="#">Produit 3</a>
+        <a href="#">Produit 4</a>
+      </div>
+    </div>
+  </details>
+
+  <h2>Tabs + sous-tabs</h2>
+  <div class="tabs">
+    <a href="#general" class="tab">Général</a>
+    <a href="#security" class="tab">Sécurité</a>
+  </div>
+
+  <div id="general" class="tab-panel">
+    <p>Paramètres généraux.</p>
+  </div>
+
+  <div id="security" class="tab-panel">
+    <p>Paramètres de sécurité.</p>
+  </div>
+</BaseLayout>

@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <Fragment slot="title">Formulaires avancés</Fragment>
+
+  <h2>Formulaire long (multi-sections)</h2>
+  <form class="form-sections">
+    <section>
+      <h3>Informations personnelles</h3>
+      <label>Nom</label>
+      <input type="text">
+      <label>Email</label>
+      <input type="email">
+    </section>
+
+    <section>
+      <h3>Adresse</h3>
+      <label>Rue</label>
+      <input type="text">
+      <label>Ville</label>
+      <input type="text">
+    </section>
+
+    <section>
+      <h3>Préférences</h3>
+      <label>Newsletter</label>
+      <input type="checkbox">
+    </section>
+
+    <button class="btn btn-primary">Envoyer</button>
+  </form>
+
+  <h2>Formulaire avec review</h2>
+  <div class="review-card">
+    <h3>Résumé</h3>
+    <p><strong>Nom :</strong> Alice</p>
+    <p><strong>Email :</strong> alice@example.com</p>
+    <button class="btn">Modifier</button>
+    <button class="btn btn-primary">Confirmer</button>
+  </div>
+</BaseLayout>
